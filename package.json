@@ -1,0 +1,41 @@
+{
+  "name": "fantasyfootballBE",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "tdd": "nodemon --watch ./  --delay 1 ./bin/www",
+    "test": "npm run test:unit && npm run test:integration",
+    "test:integration": "NODE_ENV=test mocha test/integration --recursive -t 15000",
+    "test:unit": "NODE_ENV=test mocha test/unit/ --recursive",
+    "test:wmu": "webdriver-manager update"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "^4.14.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "mssql": "^3.3.0",
+    "nodemailer": "^2.5.0",
+    "nodemon": "^1.11.0",
+    "protractor": "^4.0.14",
+    "selenium-webdriver": "^3.0.1",
+    "serve-favicon": "~2.3.0"
+  },
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.allstate.com/IS-PATCHES/patches-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  }
+}
