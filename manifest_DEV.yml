@@ -1,9 +1,0 @@
-applications:
-      - name: patches-be-dev
-        memory: 512MB
-        disk_quota: 512MB
-        domain: platform-test.allstate.com
-        path: /var/vcap/data/jenkins_slave/workspace/IS-Patches/Jenkinsfile-BE
-        command: node ./bin/www
-        buildpack: nodejs_buildpack
-        env:

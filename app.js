@@ -8,6 +8,7 @@ var bodyParser = require('body-parser')
 var users = require('./routes/users')
 var login = require('./routes/login')
 var contests = require('./routes/contests')
+var register = require('./routes/register')
 
 var app = express()
 
@@ -38,6 +39,7 @@ app.use((req, res, next) => {
 app.use('/api/v1/users', users)
 app.use('/api/v1/login', login)
 app.use('/api/v1/contests', contests)
+app.use('/api/v1/register', register)
 
 
 
